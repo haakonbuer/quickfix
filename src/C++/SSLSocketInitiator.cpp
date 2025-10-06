@@ -281,7 +281,7 @@ bool SSLSocketInitiator::onPoll() {
 
 void SSLSocketInitiator::onStop() {}
 
-void SSLSocketInitiator::doConnect(const SessionID &sessionID, const Dictionary &dictionary) {
+void SSLSocketInitiator::doConnect(const SessionID &sessionID, const Dictionary &d) {
   try {
 
     Session *session = Session::lookupSession(sessionID);
